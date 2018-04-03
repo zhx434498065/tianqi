@@ -204,7 +204,7 @@
             var province=[];
             var city=[];
             $.ajax({
-                url:"http://api.jisuapi.com/weather/city?appkey=96f5cca7251bb7d6",
+                url:"https://api.jisuapi.com/weather/city?appkey=96f5cca7251bb7d6",
                 dataType:"jsonp",
                 success:function (r) {
                     data=r.result;
@@ -250,7 +250,7 @@
         function getweather(city1) {
 
             $.ajax({
-                url:"http://api.jisuapi.com/weather/query?appkey=96f5cca7251bb7d6&city="+city1,
+                url:"https://api.jisuapi.com/weather/query?appkey=96f5cca7251bb7d6&city="+city1,
                 dataType:"jsonp",
                 success:function (r) {
                     console.log(r)
